@@ -3,7 +3,7 @@ import React from 'react';
 class Footer extends React.Component {
 	render() {
 		return (
-			<footer>&copy; 2022 Code Fellows</footer>
+			<footer>&copy; 2022 Tyler Main</footer>
 		);
 	}
 }
