@@ -1,6 +1,20 @@
 import { COLOR_PICKER_SIZES } from "@mantine/core";
 import { SageMakerFeatureStoreRuntime } from "aws-sdk";
+import { useContext } from 'react';
+import { When } from 'react-if';
+import { AuthContext } from '../../Context/Auth';
 
+const Auth = ({capability, children}) => {
+  const {isLoggedIn, can} = useContext(AuthContext);
+
+  return (
+    <When condition={isLoggedIn && can(capability)}>
+      { children }
+    </When>
+  )
+}
+
+export default Auth;
 
 
 
