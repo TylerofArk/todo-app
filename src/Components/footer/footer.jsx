@@ -1,11 +1,10 @@
-import React from 'react';
+import './style.scss'
 
-class Footer extends React.Component {
-	render() {
-		return (
-			<footer>&copy; 2022 Tyler Main</footer>
-		);
-	}
+const Footer = () =>{
+  return(
+    <>
+    <div className='Footer'>@2022 Tyler Main</div>
+    </>
+  )
 }
-
 export default Footer;
