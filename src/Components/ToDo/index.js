@@ -18,7 +18,6 @@ const useStyles = createStyles((theme) => ({
   }
 }));
 
-
 const ToDo = () => {
 
   const { incomplete } = useContext(SettingsContext);

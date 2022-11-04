@@ -4,9 +4,9 @@
 
 ## Credits: Stephanie Hill, Luis Rosales, Stephen Martinez, Demo code
 
-## Phase Three
+## Phase Four
 
-### branch: login-auth
+### branch: api-auth
 
 ![UML for lab31](./public/Lab31.png)
 
