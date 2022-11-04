@@ -1,5 +1,5 @@
-import React, {useState, useEffect, useInsertionEffect } from "react";
-import cookie from "react-cookie";
+import React, {useState, useEffect } from "react";
+import cookie from "react-cookies";
 import jwt_decode from "jwt-decode";
 import axios from 'axios';
 
@@ -7,7 +7,7 @@ export const AuthContext = React.createContext();
 
 const AuthProvider = ({ children }) => {
 	const [ loggedIn, setLoggedIn ] = useState(false);
-	const [ user, setUser ] = userState({});
+	const [ user, setUser ] = useState({});
 	const [ error, setError ] = useState(null);
 
 	const can = (capability) => {
